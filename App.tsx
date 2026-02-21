@@ -11,11 +11,14 @@ import MarketSlide from './components/slides/MarketSlide';
 import TeamSlide from './components/slides/TeamSlide'; // Unified Team
 import ProfilesSlide from './components/slides/ProfilesSlide';
 import MissionVisionSlide from './components/slides/MissionVisionSlide';
+import ValidationSlide from './components/slides/ValidationSlide';
+import IDTBenefitsSlide from './components/slides/IDTBenefitsSlide';
+import ProposalSlide from './components/slides/ProposalSlide';
 import ClosingSlide from './components/slides/ClosingSlide';
 
 const App: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 10;
+  const totalSlides = 13;
   const LOGO_URL = COLORS.logo;
   const BOGOTA_BG_URL = COLORS.bogotaBg;
 
@@ -82,11 +85,14 @@ const App: React.FC = () => {
       <ProblemSlide active={currentSlide === 2} logoUrl={LOGO_URL} />
       <SolutionSlide active={currentSlide === 3} logoUrl={LOGO_URL} />
       <IASlide active={currentSlide === 4} logoUrl={LOGO_URL} />
-      <MarketSlide active={currentSlide === 5} />
-      <TeamSlide active={currentSlide === 6} logoUrl={LOGO_URL} />
-      <ProfilesSlide active={currentSlide === 7} />
-      <MissionVisionSlide active={currentSlide === 8} logoUrl={LOGO_URL} />
-      <ClosingSlide active={currentSlide === 9} logoUrl={LOGO_URL} />
+      <ValidationSlide active={currentSlide === 5} logoUrl={LOGO_URL} />
+      <ProfilesSlide active={currentSlide === 6} />
+      <IDTBenefitsSlide active={currentSlide === 7} logoUrl={LOGO_URL} />
+      <ProposalSlide active={currentSlide === 8} logoUrl={LOGO_URL} />
+      <MarketSlide active={currentSlide === 9} />
+      <TeamSlide active={currentSlide === 10} logoUrl={LOGO_URL} />
+      <MissionVisionSlide active={currentSlide === 11} logoUrl={LOGO_URL} />
+      <ClosingSlide active={currentSlide === 12} logoUrl={LOGO_URL} />
 
       {/* Navigation Controls */}
       <div className="absolute bottom-10 left-0 right-0 flex justify-between items-center px-10 z-50">

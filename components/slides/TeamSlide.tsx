@@ -12,14 +12,14 @@ const TeamSlide: React.FC<TeamSlideProps> = ({ active, logoUrl }) => {
             name: "Andres Espejo",
             role: "Cofundador",
             bio: "Matemático apasionado por el emprendimiento y la arquitectura de negocios. Su enfoque en la lógica y la escalabilidad es el motor que transforma una idea en infraestructura digital para la ciudad.",
-            img: "https://picsum.photos/seed/andres_jar/800/800",
+            img: "https://firebasestorage.googleapis.com/v0/b/studio-7377357488-df5a7.firebasestorage.app/o/PuntoJarAnd.png?alt=media&token=cc676f2d-cbdc-42f9-8e16-f42b0cd31036",
             color: "#d4a017"
         },
         {
             name: "Daniel Galvis",
-            role: "Cofundador",
+            role: "Fundador",
             bio: "Desarrollador con 7 años de experiencia. Matemático, contador, con postgrado en Analítica/Big Data y maestría en Ciberseguridad. Socio de Cocoon On SAS, apasionado por viajar y descubrir nuevas experiencias cerveceras.",
-            img: "https://picsum.photos/seed/daniel_jar/800/800",
+            img: "https://firebasestorage.googleapis.com/v0/b/studio-7377357488-df5a7.firebasestorage.app/o/PuntoJarDan.png?alt=media&token=d3c1b1ea-13ec-4a12-8e65-5c3d60e13719",
             color: "#5d2b12"
         }
     ];

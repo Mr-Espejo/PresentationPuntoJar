@@ -101,7 +101,7 @@ const IASlide: React.FC<IASlideProps> = ({ active, logoUrl }) => {
 
                         <div className={`pt-4 transition-all duration-1000 delay-1000 ${active ? 'opacity-100' : 'opacity-0'}`}>
                             <p className="text-sm font-black text-[#d4a017] uppercase tracking-[0.3em] border-t border-[#d4a017]/20 pt-4 text-center">
-                                Diferenciación vs Medellín & Buenos Aires
+                                Diferenciación vs otras ciudades importantes de Latinoamérica
                             </p>
                         </div>
                     </div>

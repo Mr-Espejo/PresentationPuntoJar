@@ -21,10 +21,10 @@ const IntroSlide: React.FC<IntroSlideProps> = ({ active, logoUrl }) => {
                         </div>
                     </div>
                 </div>
-                <p className="text-2xl md:text-3xl font-medium text-[#d4a017] tracking-[0.2em] uppercase mt-4">Posicionando a Bogotá como el destino líder en cultura cervecera de la región.</p>
+                <p className="text-2xl md:text-3xl font-medium text-[#d4a017] tracking-[0.2em] uppercase mt-4 bg-white/30 backdrop-blur-sm py-2 px-4 rounded-full border border-white/50">Bogotá puede convertirse en el referente cervecero de Latinoamérica.</p>
                 <div className="mt-12 h-1 w-24 bg-[#5d2b12] mx-auto opacity-50"></div>
                 <p className="mt-8 text-lg text-gray-700 max-w-lg mx-auto font-medium bg-white/30 backdrop-blur-sm py-2 px-4 rounded-full border border-white/50">
-                    Descubre los rincones más auténticos de Bogotá, una pola a la vez.
+                    Descubre los rincones más auténticos de Bogotá.
                 </p>
             </div>
         </Slide>
