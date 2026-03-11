@@ -7,10 +7,10 @@ interface MarketSlideProps {
 
 const MarketSlide: React.FC<MarketSlideProps> = ({ active }) => {
     const photos = [
-        { url: "https://images.unsplash.com/photo-1575037614876-c38a4d44f5b8?auto=format&fit=crop&q=80&w=400", rotation: "-rotate-6", delay: "delay-[200ms]" },
-        { url: "https://images.unsplash.com/photo-1532635241-17e820acc59f?auto=format&fit=crop&q=80&w=400", rotation: "rotate-3", delay: "delay-[400ms]" },
-        { url: "https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&q=80&w=400", rotation: "-rotate-3", delay: "delay-[600ms]" },
-        { url: "https://images.unsplash.com/photo-1436018626274-89acd1d6ec9d?auto=format&fit=crop&q=80&w=400", rotation: "rotate-6", delay: "delay-[800ms]" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/studio-7377357488-df5a7.firebasestorage.app/o/Punto%20Jar%2FWhatsApp%20Image%202026-03-10%20at%2011.31.39%20PM%20(1).jpeg?alt=media&token=c20b7011-7db9-4130-ae44-6674a690aded", rotation: "-rotate-6", delay: "delay-[200ms]" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/studio-7377357488-df5a7.firebasestorage.app/o/Punto%20Jar%2FWhatsApp%20Image%202026-03-10%20at%2011.23.48%20PM.jpeg?alt=media&token=7bcd080c-8a85-40bd-90e2-6533326de6c4", rotation: "rotate-3", delay: "delay-[400ms]" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/studio-7377357488-df5a7.firebasestorage.app/o/Punto%20Jar%2FWhatsApp%20Image%202026-03-10%20at%2011.23.46%20PM%20(2).jpeg?alt=media&token=f35e0480-35e8-4661-9f15-b8257151e6ae", rotation: "-rotate-3", delay: "delay-[600ms]" },
+        { url: "https://firebasestorage.googleapis.com/v0/b/studio-7377357488-df5a7.firebasestorage.app/o/Punto%20Jar%2FWhatsApp%20Image%202026-03-10%20at%2011.23.47%20PM%20(1).jpeg?alt=media&token=4253f52b-1168-4ef9-b732-24ab43dd3eb5", rotation: "rotate-6", delay: "delay-[800ms]" },
     ];
 
     return (

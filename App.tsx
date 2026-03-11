@@ -7,18 +7,19 @@ import MotivationSlide from './components/slides/MotivationSlide';
 import ProblemSlide from './components/slides/ProblemSlide';
 import SolutionSlide from './components/slides/SolutionSlide';
 import IASlide from './components/slides/IASlide';
+import ProposalSlide from './components/slides/ProposalSlide';
+import FieldworkAnalysisSlide from './components/slides/FieldworkAnalysisSlide';
 import MarketSlide from './components/slides/MarketSlide';
-import TeamSlide from './components/slides/TeamSlide'; // Unified Team
+import TeamSlide from './components/slides/TeamSlide';
 import ProfilesSlide from './components/slides/ProfilesSlide';
 import MissionVisionSlide from './components/slides/MissionVisionSlide';
 import ValidationSlide from './components/slides/ValidationSlide';
 import IDTBenefitsSlide from './components/slides/IDTBenefitsSlide';
-import ProposalSlide from './components/slides/ProposalSlide';
 import ClosingSlide from './components/slides/ClosingSlide';
 
 const App: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 13;
+  const totalSlides = 14;
   const LOGO_URL = COLORS.logo;
   const BOGOTA_BG_URL = COLORS.bogotaBg;
 
@@ -89,10 +90,11 @@ const App: React.FC = () => {
       <ProfilesSlide active={currentSlide === 6} />
       <IDTBenefitsSlide active={currentSlide === 7} logoUrl={LOGO_URL} />
       <ProposalSlide active={currentSlide === 8} logoUrl={LOGO_URL} />
-      <MarketSlide active={currentSlide === 9} />
-      <TeamSlide active={currentSlide === 10} logoUrl={LOGO_URL} />
-      <MissionVisionSlide active={currentSlide === 11} logoUrl={LOGO_URL} />
-      <ClosingSlide active={currentSlide === 12} logoUrl={LOGO_URL} />
+      <FieldworkAnalysisSlide active={currentSlide === 9} />
+      <MarketSlide active={currentSlide === 10} />
+      <TeamSlide active={currentSlide === 11} logoUrl={LOGO_URL} />
+      <MissionVisionSlide active={currentSlide === 12} logoUrl={LOGO_URL} />
+      <ClosingSlide active={currentSlide === 13} logoUrl={LOGO_URL} />
 
       {/* Navigation Controls */}
       <div className="absolute bottom-10 left-0 right-0 flex justify-between items-center px-10 z-50">
