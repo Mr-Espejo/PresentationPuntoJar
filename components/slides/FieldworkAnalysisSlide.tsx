@@ -17,10 +17,10 @@ const FieldworkAnalysisSlide: React.FC<FieldworkAnalysisSlideProps> = ({ active 
         }
     }, [active]);
 
-    const stats = [
-        { label: "Se sienten perdidos al elegir cerveza artesanal", value: 85, color: "bg-[#d4a017]" },
-        { label: "Siempre visitan los mismos 3 lugares industriales", value: 72, color: "bg-[#5d2b12]" },
-        { label: "Usarían una App con rutas y recompensas", value: 94, color: "bg-[#f7b731]" },
+    const findings = [
+        { label: "Visibilidad y desafíos de cervecerías artesanales", color: "bg-[#d4a017]" },
+        { label: "Perfil y comportamiento del consumidor cervecero", color: "bg-[#f7b731]" },
+        { label: "Potencial de la ciudad como destino cervecero", color: "bg-white" },
     ];
 
     return (
@@ -39,7 +39,7 @@ const FieldworkAnalysisSlide: React.FC<FieldworkAnalysisSlideProps> = ({ active 
                     <div className={`hidden md:block transition-all duration-700 delay-200 ${active ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
                         <div className="bg-white/80 backdrop-blur-md p-4 rounded-3xl border border-[#5d2b12]/10 shadow-xl">
                             <div className="flex items-center gap-4">
-                                <div className="text-4xl font-black text-[#5d2b12] tracking-tighter">+120</div>
+                                <div className="text-4xl font-black text-[#5d2b12] tracking-tighter">+20</div>
                                 <div className="text-[10px] font-black uppercase text-[#5d2b12]/40 leading-tight">Muestras<br />Presenciales</div>
                             </div>
                         </div>
@@ -85,22 +85,27 @@ const FieldworkAnalysisSlide: React.FC<FieldworkAnalysisSlideProps> = ({ active 
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
 
                             <div className="relative z-10 mb-8">
-                                <h3 className="text-3xl font-black uppercase tracking-tighter mb-2">Resultados de la Encuesta</h3>
-                                <p className="text-white/50 text-xs font-black uppercase tracking-widest">Validación en Punto de Venta (1:1)</p>
+                                <h3 className="text-2xl font-black uppercase tracking-tighter mb-2">Hallazgos Estratégicos</h3>
+                                <p className="text-white/50 text-[10px] font-black uppercase tracking-widest">Basado en Trabajo de Campo en Bogotá</p>
                             </div>
 
                             <div className="space-y-10 relative z-10 flex-1 flex flex-col justify-center">
-                                {stats.map((stat, i) => (
-                                    <div key={i} className="space-y-3">
-                                        <div className="flex justify-between items-end">
-                                            <span className="text-sm font-black uppercase tracking-tight max-w-[70%] leading-tight text-white/80">{stat.label}</span>
-                                            <span className="text-3xl font-black text-[#f7b731]">{animate ? stat.value : 0}%</span>
+                                {findings.map((item, i) => (
+                                    <div key={i} className="space-y-4">
+                                        <div className="flex justify-between items-center">
+                                            <span className="text-sm font-black uppercase tracking-tight max-w-[85%] leading-tight text-white/90">{item.label}</span>
                                         </div>
-                                        <div className="h-4 bg-white/10 rounded-full overflow-hidden border border-white/5">
-                                            <div
-                                                className={`h-full ${stat.color} transition-all duration-[1500ms] cubic-bezier(0.34, 1.56, 0.64, 1)`}
-                                                style={{ width: animate ? `${stat.value}%` : '0%' }}
-                                            ></div>
+                                        <div className="flex gap-2 h-1.5">
+                                            {[...Array(6)].map((_, idx) => (
+                                                <div
+                                                    key={idx}
+                                                    className={`flex-1 rounded-full transition-all duration-1000 ${animate ? item.color : 'bg-white/10'}`}
+                                                    style={{
+                                                        transitionDelay: `${(i * 200) + (idx * 100)}ms`,
+                                                        opacity: animate ? (1 - (idx * 0.12)) : 0.1
+                                                    }}
+                                                ></div>
+                                            ))}
                                         </div>
                                     </div>
                                 ))}
