@@ -7,19 +7,17 @@ import MotivationSlide from './components/slides/MotivationSlide';
 import ProblemSlide from './components/slides/ProblemSlide';
 import SolutionSlide from './components/slides/SolutionSlide';
 import IASlide from './components/slides/IASlide';
-import ProposalSlide from './components/slides/ProposalSlide';
-import FieldworkAnalysisSlide from './components/slides/FieldworkAnalysisSlide';
 import MarketSlide from './components/slides/MarketSlide';
 import TeamSlide from './components/slides/TeamSlide';
 import ProfilesSlide from './components/slides/ProfilesSlide';
 import MissionVisionSlide from './components/slides/MissionVisionSlide';
 import ValidationSlide from './components/slides/ValidationSlide';
-import IDTBenefitsSlide from './components/slides/IDTBenefitsSlide';
+//import IDTBenefitsSlide from './components/slides/IDTBenefitsSlide';
 import ClosingSlide from './components/slides/ClosingSlide';
 
 const App: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 14;
+  const totalSlides = 11;
   const LOGO_URL = COLORS.logo;
   const BOGOTA_BG_URL = COLORS.bogotaBg;
 
@@ -88,13 +86,10 @@ const App: React.FC = () => {
       <IASlide active={currentSlide === 4} logoUrl={LOGO_URL} />
       <ValidationSlide active={currentSlide === 5} logoUrl={LOGO_URL} />
       <ProfilesSlide active={currentSlide === 6} />
-      <IDTBenefitsSlide active={currentSlide === 7} logoUrl={LOGO_URL} />
-      <ProposalSlide active={currentSlide === 8} logoUrl={LOGO_URL} />
-      <FieldworkAnalysisSlide active={currentSlide === 9} />
-      <MarketSlide active={currentSlide === 10} />
-      <TeamSlide active={currentSlide === 11} logoUrl={LOGO_URL} />
-      <MissionVisionSlide active={currentSlide === 12} logoUrl={LOGO_URL} />
-      <ClosingSlide active={currentSlide === 13} logoUrl={LOGO_URL} />
+      <MarketSlide active={currentSlide === 7} />
+      <TeamSlide active={currentSlide === 8} logoUrl={LOGO_URL} />
+      <MissionVisionSlide active={currentSlide === 9} logoUrl={LOGO_URL} />
+      <ClosingSlide active={currentSlide === 10} logoUrl={LOGO_URL} />
 
       {/* Navigation Controls */}
       <div className="absolute bottom-10 left-0 right-0 flex justify-between items-center px-10 z-50">
